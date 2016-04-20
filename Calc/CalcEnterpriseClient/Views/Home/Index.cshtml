@@ -1,0 +1,22 @@
+﻿@model CalcEnterpriseClient.Models.SessionTalk[]
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>Classes</h1>
+    <div> 
+        @foreach (var item in Model)
+        {
+            <div>@item.Title</div>
+        }
+    </div>
+</body>
+</html>

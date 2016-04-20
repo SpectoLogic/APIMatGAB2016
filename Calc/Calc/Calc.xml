@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Calc</name>
+    </assembly>
+    <members>
+        <member name="T:Calc.Controllers.CalcController">
+            <summary>
+            A simple calculator api by apollak
+            </summary>
+        </member>
+        <member name="M:Calc.Controllers.CalcController.Add(System.Int32,System.Int32)">
+            <summary>
+            This call allows to add two integers together
+            </summary>
+            <param name="a">First integer to add</param>
+            <param name="b">Second integer to add</param>
+            <returns>The result of a+b</returns>
+        </member>
+        <member name="M:Calc.Controllers.CalcController.Subtract(System.Int32,System.Int32)">
+            <summary>
+            This substracts values from each other!
+            </summary>
+            <param name="a">Value b is substracted from this value.</param>
+            <param name="b">Value which is substracted from a.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Calc.Controllers.CalcController.Multiply(System.Int32,System.Int32)">
+            <summary>
+            Multiply the values a and b.
+            </summary>
+            <param name="a">a</param>
+            <param name="b">b</param>
+            <returns></returns>
+        </member>
+        <member name="M:Calc.Controllers.CalcController.Divide(System.Int32,System.Int32)">
+            <summary>
+            Divides the values a / b
+            </summary>
+            <param name="a">a</param>
+            <param name="b">b</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

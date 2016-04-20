@@ -1,0 +1,22 @@
+
+
+	<on-error>
+		<choose>
+			<when condition="@(context.Response.StatusCode==401)">
+				<send-one-way-request mode="new">
+					<set-url>https://hooks.slack.com/services/{{SlackKey}}</set-url>
+					<set-method>POST</set-method>
+					<set-body>
+                    @{
+                        return new JObject(
+                            new JProperty("username","support-bot"),
+                            new JProperty("channel","#support"),
+                            new JProperty("text","Add method had an invalid JWT-Token :-P !")
+                            ).ToString();
+                    }
+                    </set-body>
+				</send-one-way-request>
+			</when>
+		</choose>
+	</on-error>
+
